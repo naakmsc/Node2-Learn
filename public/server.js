@@ -6,21 +6,21 @@ let url = require("url");
 const PORT = 3000;
 
 let server = http.createServer((req,res)=>{
-    res.writeHead(200,{"Content-Type":"text/html"});
+    // res.writeHead(200,{"Content-Type":"text/html"});
     // fs.createReadStream("public/home.html").pipe(res);
     let u = url.parse(req.url);
     
     if(u.pathname == "/home"){
-        // res.writeHead(200,{"Content-Type":"text/html"});
+        res.writeHead(200,{"Content-Type":"text/html"});
         fs.createReadStream("public/home.html").pipe(res);
     }else if(u.pathname == "/services"){
-        // res.writeHead(200,{"Content-Type":"text/html"});
+        res.writeHead(200,{"Content-Type":"text/html"});
         fs.createReadStream("public/services.html").pipe(res);
     }else if(u.pathname == "/contact"){
-        // res.writeHead(200,{"Content-Type":"text/html"});
+        res.writeHead(200,{"Content-Type":"text/html"});
         fs.createReadStream("public/contact.html").pipe(res);
     }else if(u.pathname == "/about"){
-        // res.writeHead(200,{"Content-Type":"text/html"});
+        res.writeHead(200,{"Content-Type":"text/html"});
         fs.createReadStream("public/about.html").pipe(res);
     }else{
         res.writeHead(404,{"Content-Type":"text/html"});
