@@ -19,5 +19,9 @@
   "homepage": "https://github.com/naakmsc/Node2-Learn#readme",
   "devDependencies": {
     "express": "^4.18.1"
+  },
+  "dependencies": {
+    "mongoose": "^6.4.3",
+    "mysql": "^2.18.1"
   }
 }
