@@ -4,8 +4,7 @@ let http = require("http");
 let fs = require("fs");
 const querystring = require("querystring");
 let mongodb = require("mongodb");
-const { mongo } = require("mongoose");
-const { query } = require("express");
+
 
 let mongoClient = mongodb.MongoClient;
 
