@@ -24,6 +24,7 @@
   "dependencies": {
     "bootstrap": "^5.2.0",
     "formidable": "^2.0.1",
+    "moment": "^2.29.4",
     "mongodb": "^4.8.0",
     "mongoose": "^6.4.3",
     "nodemailer": "^6.7.7",
